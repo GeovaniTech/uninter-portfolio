@@ -61,3 +61,21 @@
     cursor: pointer;
 }
 
+@media (max-width: 820px) {
+    #sobre-mim h2 {
+        margin: 30px 0px;
+    }
+    #container-cards {
+        flex-direction: column;
+    }
+
+    .card-sobre-mim {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .card-sobre-mim:hover {
+        transform: none;
+    }
+}
