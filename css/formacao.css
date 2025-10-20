@@ -1,0 +1,25 @@
+#formacao {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-formacao {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 2px solid var(--purple-color);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.container-formacao {
+    display: flex;
+    flex-direction: row;
+}
+
+.card-formacao div {
+    margin-left: 20px;
+}

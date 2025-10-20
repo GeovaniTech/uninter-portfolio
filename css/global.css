@@ -44,3 +44,8 @@ h2 {
 h2 span {
     color: var(--primary-color);
 }
+
+.logo-company {
+    max-width: 100px;
+    margin: 20px 0px;
+}
