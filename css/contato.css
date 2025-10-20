@@ -66,6 +66,29 @@
     transform: translateY(0);
 }
 
+.container-contato .links {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.container-contato i {
+    font-size: 3rem;
+    color: var(--primary-color);
+    background-color: var(--bg-light);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.container-contato i:hover {
+    color: var(--primary-color-hover);
+    transform: scale(1.05);
+    transition: transform 250ms ease, box-shadow 250ms ease;
+}
+
 @media (max-width: 520px) {
     .form-contato {
         padding: 16px;
