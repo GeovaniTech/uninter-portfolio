@@ -1,3 +1,52 @@
-#home {
+#inicio {
+    background-image: url('/imagens/home-background.jpg');
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    color: white;
+}
+
+.container-welcome {
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+.container-welcome span {
     background-color: var(--primary-color);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.container-welcome h1 {
+    margin: 30px 0;
+}
+
+#link-marcar-um-cafe {
+    color: white;
+    background-color: var(--black-color);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    width: 210px;
+    text-align: center;
+    box-shadow: 12px 12px 2px 1px rgba(28, 28, 29, 0.616);
+    transition: 0.4s;
+}
+
+#link-marcar-um-cafe:hover {
+    background-color: var(--black-color-hover);
+    box-shadow: 12px 12px 2px 1px var(--primary-color-hover);
+}
+
+#img-eu-home {
+    max-width: 400px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    background: conic-gradient(from 0deg, var(--primary-color), var(--purple-color), var(--primary-color-hover));
 }
