@@ -7,6 +7,7 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 
     color: white;
 }
@@ -49,4 +50,39 @@
     border-radius: 10px;
     border: 2px solid transparent;
     background: conic-gradient(from 0deg, var(--primary-color), var(--purple-color), var(--primary-color-hover));
+}
+
+#mobile-menu-button {
+    display: none;
+}
+
+/*
+* Início Design Responsivo   
+*/
+@media (max-width: 1020px) {
+    .container-welcome h1 {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media (max-width: 820px) {
+    .container-welcome {
+        max-width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    #img-eu-home {
+        max-height: 400px;
+        margin: 20px;
+    }
+
+    #mobile-menu-button {
+        display: block;
+        font-size: 2rem;
+        border: none;
+        cursor: pointer;
+        color: var(--primary-color);
+    }
 }

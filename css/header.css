@@ -24,3 +24,39 @@ nav a {
 nav a:hover {
     color: var(--primary-color);
 }
+
+#mobile-menu-button {
+    display: none;
+    font-size: 1.2rem;
+    color: var(--black-color);
+    text-decoration: none;
+}
+
+header { 
+    z-index: 9999; 
+}
+
+@media (max-width: 820px) {
+    nav { 
+        display: none; 
+    }
+    
+    #mobile-menu-button { 
+        display: block; 
+    }
+}
+
+header.mobile-nav-open nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: var(--header-height);
+    left: 0;
+    right: 0;
+    background: var(--bg-branco);
+    padding: 12px 16px;
+}
+
+header.mobile-nav-open nav a {
+    margin: 8px 0;
+}

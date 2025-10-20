@@ -96,12 +96,3 @@
 
     .btn-enviar { width: 100%; text-align: center; }
 }
-
-@media (prefers-reduced-motion: reduce) {
-    .btn-enviar,
-    .card-project,
-    .img-eu-wrap {
-        transition: none !important;
-        animation: none !important;
-    }
-}

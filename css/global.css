@@ -50,3 +50,12 @@ h2 span {
     max-width: 100px;
     margin: 20px 0px;
 }
+
+/*
+* Início Design Responsivo
+*/
+@media (max-width: 520px) { 
+    section {
+        height: auto;
+    }
+}
