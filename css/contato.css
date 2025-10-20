@@ -1,0 +1,84 @@
+#contato {
+    padding: 40px 20px;
+}
+
+.container-contato {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.form-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background: var(--card-bg, #fff);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(16,24,40,0.06);
+    border: 1px solid rgba(16,24,40,0.04);
+}
+
+.form-contato label {
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.form-contato input[type="email"],
+.form-contato textarea {
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid lightgray;
+    background: #fff;
+    font-size: 0.95rem;
+    resize: vertical;
+}
+
+.form-contato input[type="email"]::placeholder,
+.form-contato textarea::placeholder {
+    color: rgba(0,0,0,0.35);
+}
+
+.form-contato input[type="email"]:focus,
+.form-contato textarea:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(56,182,255,0.12);
+    border-color: var(--primary-color);
+}
+
+.btn-enviar {
+    align-self: flex-start;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    font-weight: 700;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.btn-enviar:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 24px rgba(138,43,226,0.12);
+}
+
+.btn-enviar:active {
+    transform: translateY(0);
+}
+
+@media (max-width: 520px) {
+    .form-contato {
+        padding: 16px;
+    }
+
+    .btn-enviar { width: 100%; text-align: center; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .btn-enviar,
+    .card-project,
+    .img-eu-wrap {
+        transition: none !important;
+        animation: none !important;
+    }
+}

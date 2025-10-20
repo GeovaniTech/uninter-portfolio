@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/sobre-mim.css">
     <link rel="stylesheet" href="css/formacao.css">
     <link rel="stylesheet" href="css/portfolio-projects.css">
+    <link rel="stylesheet" href="css/contato.css">
 
     <!-- Ícones da FontAwesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
@@ -146,6 +147,18 @@
 
         <section id="contato">
             <h2>Meus <span>Contatos</span></h2>
+
+            <div class="container-contato">
+                <form class="form-contato">
+                    <label for="contato-email">Email</label>
+                    <input id="contato-email" name="email" type="email" placeholder="seu@email.com" required>
+
+                    <label for="contato-mensagem">Mensagem</label>
+                    <textarea id="contato-mensagem" name="mensagem" rows="6" placeholder="Escreva sua mensagem aqui..." required></textarea>
+
+                    <button type="submit" class="btn-enviar" onclick="onEnviarContato();">Enviar</button>
+                </form>
+            </div>
         </section>
     </main>
 
@@ -154,5 +167,6 @@
     </footer>
 
     <script src="js/hobbies-carousel.js"></script>
+    <script src="js/contato.js"></script>
 </body>
 </html>
