@@ -18,8 +18,22 @@
 .container-formacao {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .card-formacao div {
     margin-left: 20px;
+}
+
+@media (max-width: 820px) { 
+    .card-formacao {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    .card-formacao div {
+        margin-left: 0;
+        margin-top: 10px;
+    }
 }
