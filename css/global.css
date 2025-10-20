@@ -1,3 +1,4 @@
+/* Importação da fonte Poppins do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 /*
@@ -17,17 +18,27 @@
     --purple-color-hover: #9b33ff;
     --black-color: #1E1E1E;
     --black-color-hover: #282a2c;
+    --bg-light: #f8f9fa;
+    --bg-branco: #FFF;
     --header-height: 60px;
+}
+
+main {
+    position: fixed;
+    width: 100vw;
+    height: calc(100vh - var(--header-height));
+    top: var(--header-height);
+    overflow-y: scroll;
 }
 
 section {
     min-height: calc(100vh - var(--header-height));
-    margin-top: var(--header-height);
     max-width: 100vw;
 }
 
 h2 {
     font-size: 2.5rem;
+    text-align: center;
 }
 
 h2 span {
